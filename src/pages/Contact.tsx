@@ -224,6 +224,29 @@ export function Contact() {
             </p>
           </form>
         </div>
+
+        {/* Where to find us */}
+        <div className="mx-auto max-w-[1680px] px-5 pb-24 md:px-14 md:pb-32">
+          <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+            <h2 className="display text-[clamp(40px,4vw,68px)]">
+              <span className="block">Find</span>
+              <span className="it block text-maroon">Our office</span>
+            </h2>
+            <a href={contact.maps} target="_blank" rel="noopener" className="caps inline-flex min-h-11 items-center gap-2 border-b border-ink pb-0.5 hover:text-maroon">
+              <PinIcon /> Get directions
+            </a>
+          </div>
+          <div className="relative aspect-[4/5] w-full overflow-hidden bg-sand sm:aspect-[16/9] lg:aspect-[21/8]">
+            <iframe
+              src={contact.mapEmbed}
+              title={`Map showing ${contact.address.join(', ')}`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 h-full w-full border-0 grayscale-[35%]"
+            />
+          </div>
+          <p className="lede mt-4 text-ink/70">{contact.address.join(', ')}</p>
+        </div>
       </section>
     </>
   );

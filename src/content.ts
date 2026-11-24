@@ -28,6 +28,8 @@ export const contact = {
   quoteEmail: 'info@fairvalueprojectsotto.co.za',
   address: ['426 Gen. De Wet Street', 'Pretoria North', '0182'],
   maps: 'https://www.google.com/maps/search/?api=1&query=426+Gen+De+Wet+Street+Pretoria+North+0182',
+  /** Google Maps embed for the Contact page (no API key needed). */
+  mapEmbed: 'https://maps.google.com/maps?q=426+Generaal+De+Wet+St,+Pretoria+North,+0182&z=16&output=embed',
   facebook: 'https://www.facebook.com/p/Fairvalue-Renovations-and-Projects-100077483002222/',
 };
 
